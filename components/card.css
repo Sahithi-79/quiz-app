@@ -25,15 +25,28 @@
 }
 
 .quiz-card__question {
-  margin-top: 10px;
   font-size: 20px;
-  padding-right: 30px; /* Add padding to the right to avoid overlap with the bookmark */
+  padding-right: 30px;
 }
 
 .quiz-card__answer {
   line-height: 1.6;
 }
 
+.quiz-card__tags {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.quiz-card__tag {
+  background-color: lightgray;
+  color: black;
+  padding: 4px 4px;
+  border-radius: 4px;
+  font-size: 12px;
+}
 .profile-card,
 .settings {
   max-width: 500px;
