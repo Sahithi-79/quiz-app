@@ -6,9 +6,69 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header class="header">
       <h1 class="header__title">Quiz App</h1>
     </header>
+
+    <main class="quiz">
+      <article class="quiz-card">
+        <button class="quiz-card__bookmark" type="button">♡</button>
+
+        <h2 class="quiz-card__question">What is HTML?</h2>
+
+        <p class="quiz-card__answer" hidden>
+          HTML stands for HyperText Markup Language. It structures content on
+          web pages.
+        </p>
+
+        <button class="button" type="button">Show Answer</button>
+      </article>
+      <article class="quiz-card">
+        <button class="quiz-card__bookmark" type="button">♥</button>
+
+        <h2 class="quiz-card__question">What is CSS?</h2>
+
+        <p class="quiz-card__answer">
+          CSS styles the appearance and layout of web pages.
+        </p>
+
+        <button class="button" type="button">Hide Answer</button>
+      </article>
+      <article class="quiz-card">
+        <button class="quiz-card__bookmark" type="button">♡</button>
+
+        <h2 class="quiz-card__question">
+          What is the purpose of the HTML alt attribute?
+        </h2>
+
+        <p class="quiz-card__answer" hidden>
+          The alt attribute provides alternative text describing an image for
+          screen readers and when the image cannot load.
+        </p>
+
+        <button class="button" type="button">Show Answer</button>
+      </article>
+
+      <article class="quiz-card">
+        <button class="quiz-card__bookmark" type="button">♡</button>
+
+        <h2 class="quiz-card__question">
+          What does the CSS margin property do?
+        </h2>
+
+        <p class="quiz-card__answer" hidden>
+          Margin adds space outside an HTML element.
+        </p>
+
+        <button class="button" type="button">Show Answer</button>
+      </article>
+    </main>
+    <nav class="navigation">
+      <a class="nav__link active" href="index.html">⌂ Home</a>
+      <a class="nav__link" href="bookmarks.html">♡ Bookmarks</a>
+      <a class="nav__link" href="profile.html">♙ Profile</a>
+    </nav>
   </body>
 </html>

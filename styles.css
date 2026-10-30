@@ -1,18 +1,46 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f4f8;
-  color: #263238;
+@import "components/header.css";
+@import "components/card.css";
+@import "components/button.css";
+@import "components/navigation.css";
+@import "components/global.css";
+
+/* Dark mode styles */
+body:has(input:checked) {
+  background-color: darkgray;
+  color: white;
 }
 
-.header {
-  padding: 20px;
-  text-align: center;
-  background-color: white;
-  border-bottom: 1px solid #d5d5d5;
+body:has(input:checked) .header,
+body:has(input:checked) .quiz-card,
+body:has(input:checked) .profile-card,
+body:has(input:checked) .settings,
+body:has(input:checked) .navigation {
+  background-color: black;
+  color: white;
 }
 
-.header__title {
-  margin: 0;
-  font-size: 1.8rem;
+body:has(input:checked) a {
+  color: white;
+}
+
+/* Responsive design */
+.quiz-card {
+  width: 90%;
+  box-sizing: border-box;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .quiz-card {
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .header__title {
+    font-size: 24px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
 }

@@ -1,0 +1,22 @@
+.navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  background-color: var(--card-bg);
+  border-top: 1px solid lightgray;
+}
+
+.nav__link {
+  color: var(--text-color);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav__link.active {
+  color: royalblue;
+  font-weight: bold;
+}
