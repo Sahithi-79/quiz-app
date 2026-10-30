@@ -4,25 +4,6 @@
 @import "components/navigation.css";
 @import "components/global.css";
 
-/* Dark mode styles */
-body:has(input:checked) {
-  background-color: darkgray;
-  color: white;
-}
-
-body:has(input:checked) .header,
-body:has(input:checked) .quiz-card,
-body:has(input:checked) .profile-card,
-body:has(input:checked) .settings,
-body:has(input:checked) .navigation {
-  background-color: black;
-  color: white;
-}
-
-body:has(input:checked) a {
-  color: white;
-}
-
 /* Responsive design */
 .quiz-card {
   width: 90%;
