@@ -47,6 +47,13 @@
   line-height: 1.6;
 }
 
+.profile-info {
+  font:
+    bold 16px/1.5 "Arial",
+    sans-serif;
+  color: brown;
+}
+
 .dark-mode {
   display: flex;
   justify-content: space-between;
