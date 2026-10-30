@@ -27,6 +27,7 @@
 .quiz-card__question {
   margin-top: 10px;
   font-size: 20px;
+  padding-right: 30px; /* Add padding to the right to avoid overlap with the bookmark */
 }
 
 .quiz-card__answer {
