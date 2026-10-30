@@ -2,9 +2,12 @@
   padding: 2px;
   text-align: center;
   background-color: white;
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid lightgray;
 }
 
 .header__title {
   font-size: 30px;
+  font:
+    italic small-caps bold 30px/1.5 "Times New Roman",
+    serif;
 }
