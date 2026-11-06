@@ -22,7 +22,7 @@
           name="question"
           maxlength="150"
         ></textarea>
-        <p id="question-counter" data-js="question-counter">
+        <p id="question-counter" class="counter" data-js="question-counter">
           150 characters remaining
         </p>
         <label for="answer">Your Answer:</label>
@@ -32,12 +32,14 @@
           name="answer"
           maxlength="150"
         ></textarea>
-        <p id="answer-counter" data-js="answer-counter">
+        <p id="answer-counter" class="counter" data-js="answer-counter">
           150 characters remaining
         </p>
         <label for="tag">Tags:</label>
         <input type="text" id="tag" data-js="tag" name="tag" />
-        <button class="button" type="submit">Add Question</button>
+        <button class="button" type="submit" aria-label="Add question">
+          Add Question
+        </button>
       </form>
     </main>
 

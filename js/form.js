@@ -13,6 +13,7 @@ form.addEventListener("submit", (event) => {
   const tagText = tagInput.value;
 
   // generating DOM for the form
+  //creating card
 
   const newCard = document.createElement("article");
   newCard.classList.add("quiz-card");

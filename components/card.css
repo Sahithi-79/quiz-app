@@ -110,9 +110,9 @@ body:has(input:checked) a {
   display: none;
 }
 
-#question-counter,
-#answer-counter {
+.counter {
   font-size: 12px;
   color: black;
   margin-top: 4px;
+  padding-left: 250px;
 }
