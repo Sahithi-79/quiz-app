@@ -13,8 +13,8 @@
       <h1 class="header__title">HTML and CSS Quiz</h1>
     </header>
 
-    <main class="quiz">
-      <form class="quiz-form">
+    <main class="quiz" data-js="quiz-form-container">
+      <form class="quiz-form" data-js="quiz-form">
         <label for="question">Your question:</label>
         <textarea
           id="question"
@@ -25,7 +25,6 @@
         <p id="question-counter" data-js="question-counter">
           150 characters remaining
         </p>
-
         <label for="answer">Your Answer:</label>
         <textarea
           id="answer"
@@ -33,11 +32,9 @@
           name="answer"
           maxlength="150"
         ></textarea>
-
         <p id="answer-counter" data-js="answer-counter">
           150 characters remaining
         </p>
-
         <label for="tag">Tags:</label>
         <input type="text" id="tag" data-js="tag" name="tag" />
         <button class="button" type="submit">Add Question</button>

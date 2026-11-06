@@ -1,4 +1,4 @@
-const form = document.querySelector(".quiz-form");
+const form = document.querySelector('[data-js="quiz-form"]');
 
 const questionInput = document.querySelector('[data-js="question"]');
 const answerInput = document.querySelector('[data-js="answer"]');
@@ -11,6 +11,8 @@ form.addEventListener("submit", (event) => {
   const questionText = questionInput.value;
   const answerText = answerInput.value;
   const tagText = tagInput.value;
+
+  // generating DOM for the form
 
   const newCard = document.createElement("article");
   newCard.classList.add("quiz-card");
@@ -66,12 +68,13 @@ form.addEventListener("submit", (event) => {
   tagList.append(tagItem);
   newCard.appendChild(tagList);
 
-  form.after(newCard);
+  const quiz = document.querySelector('[data-js="quiz-form-container"]');
+  quiz.append(newCard);
   form.reset();
-  //document.querySelector(".quiz").appendChild(newCard);
 });
 
-// Add the question counter here
+// question counter
+
 questionInput.addEventListener("input", () => {
   updateCounter(questionInput, questionCounter);
 });
