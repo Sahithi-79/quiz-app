@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
 
   <body>
@@ -14,16 +15,20 @@
 
     <main class="quiz">
       <article class="quiz-card">
-        <button class="quiz-card__bookmark" type="button">♡</button>
+        <button class="quiz-card__bookmark" type="button" data-js="bookmark">
+          ♡
+        </button>
 
         <h2 class="quiz-card__question">What is HTML?</h2>
 
-        <p class="quiz-card__answer" hidden>
+        <p class="quiz-card__answer hidden" data-js="answer">
           HTML stands for HyperText Markup Language. It structures content on
           web pages.
         </p>
 
-        <button class="button" type="button">Show Answer</button>
+        <button class="button" type="button" data-js="answer-button">
+          Show Answer
+        </button>
         <ul class="quiz-card__tags">
           <li class="quiz-card__tag">HTML</li>
           <li class="quiz-card__tag">Beginner</li>
@@ -89,6 +94,7 @@
     <nav class="navigation">
       <a class="nav__link active" href="index.html">⌂ Home</a>
       <a class="nav__link" href="bookmarks.html">♡ Bookmarks</a>
+      <a class="nav__link" href="form.html">＋ Add</a>
       <a class="nav__link" href="profile.html">♙ Profile</a>
     </nav>
   </body>

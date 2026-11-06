@@ -47,6 +47,14 @@
   border-radius: 4px;
   font-size: 12px;
 }
+
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
 .profile-card,
 .settings {
   max-width: 500px;
@@ -96,4 +104,15 @@ body:has(input:checked) .navigation {
 
 body:has(input:checked) a {
   color: var(--dark-text);
+}
+
+.hidden {
+  display: none;
+}
+
+#question-counter,
+#answer-counter {
+  font-size: 12px;
+  color: black;
+  margin-top: 4px;
 }
